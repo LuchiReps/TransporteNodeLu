@@ -1,0 +1,568 @@
+/* 
+font-family: 'Open Sans', sans-serif;*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* base*/
+    line-height: 20px;
+
+    /* rem es body*/
+}
+
+header {
+    background-color: #2e64a1;
+    /*rgb, rgba, #*/
+    /*padding:16px 0; es lo mismo*/
+    padding: 1rem 0;
+
+
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100px;
+    font-style: italic;
+    display: inline-flex;
+    position: relative;
+    bottom: 35px;
+    margin-left: 20px;
+
+}
+
+nav {
+    background-color: #6da9ed;
+    margin-bottom: 20px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: stretch;*/
+    /*width: 100px;*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+nav ul li {
+    display: block;
+    flex-grow: 1;
+    /*La propiedad flex-grow de CSS especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex),en su dirección principal.*/
+}
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+.activo {
+    background-color: #4c76a5;
+}
+
+/* no funciona con nav ul li a .activo*/
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+
+}
+
+/* INICIO HOME*/
+.bienvenidos {
+    width: 75%;
+    /*border: 1px solid black;*/
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+
+.testimonios {
+    width: 25%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p {
+    font-size: 20px;
+}
+
+.testimonio {
+    background-color: gray;
+    padding: 16px;
+
+}
+
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    background-color: yellow;
+    display: block;
+    /*por si las palabras se suben*/
+
+}
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    background-color: coral;
+    margin: 12px 0;
+}
+
+
+
+
+
+
+
+/*FIN HOME*/
+
+
+
+/*INICIO HOME (NOSOTROS)*/
+.historia p {
+    font-size: 12px;
+
+}
+
+.persona {
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    width: 18%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box b
+}
+
+/*perfeccionamiento de una imagen en la caja*/
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* esto tambien para que esten alineadas*/
+
+.persona img {
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px black;
+}
+
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: 0;
+    color: #2e64a1;
+
+}
+
+.persona h5 {
+    font-size: 14px;
+    margin-top: 3px;
+
+}
+
+.persona h6 {
+    font-style: italic;
+    font-size: 11px;
+}
+
+.persona p {
+    color: gray;
+    font-size: 10px;
+
+}
+
+
+
+
+/* border: 1px #ccc solid;
+ border-radius: 10px;
+  width:18% ; para hacer cajas como las de este ejemplo
+*/
+/* display block es para marcar la existencia de una caja*/
+
+
+
+
+
+
+
+/*FIN DE HOME (NOSOTROS)*/
+/*.persona:last-child{
+    margin-right: 0;
+}
+
+/*
+.persona:first-child{
+    margin-left: 0;
+}
+*/
+
+/*.persona:nth-child(3){
+    background-color: yellow;
+} */
+
+
+/*.persona:nth-child(2n+1) {
+    background-color: orange;
+}  /*par*/
+
+/*.persona:nth-child(even) {
+    background-color: yellow;
+}*/
+
+
+/*.persona:nth-child(odd) { /*impar*/
+/*   background-color: orange;
+}*/
+
+
+/*  INICIO HOME SERVICIOS*/
+.servicio {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    /* sirve como calle*/
+    align-items: center;
+}
+
+.servicio .info h4 {
+    color: #2e64a1;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px dashed #2e64a1;
+    padding-bottom: 10px;
+}
+
+.servicio .info p {
+    font-size: 13px;
+}
+
+.servicio img {
+    border-radius: 13px;
+    max-width: 225px;
+    display: block;
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* estas dos para cambiar de lado las imagenes*/
+.servicio:nth-child(odd) {
+    flex-direction: row;
+}
+
+/*  FIN HOME SERVICIOS*/
+
+
+/*INICIO GALERIA*/
+
+.galeria img {
+    border: 1px #ccc solid;
+    width: 18%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    box-sizing: border-box;
+
+}
+
+/*.galeria img:nth-child(5n+1)
+{border: 1px solid red;}*/
+
+.galeria img:hover {
+    background-color: lawngreen;
+    border-color: lawngreen;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+
+/*FIN GALERIA*/
+
+
+/* INICIO CONTACTO*/
+
+.contacto {
+    display: flex;
+    gap: 24px;
+
+}
+
+.contacto div {
+    width: 100%;
+    background-color: yellow;
+}
+
+div.datos {
+    background-color: orangered;
+}
+
+.datos {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+
+
+.formulario p {
+    display: flex;
+
+}
+
+.formulario p label {
+    min-width: 80px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+}
+
+/* importante TODO*/
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+
+}
+
+/* importante*/
+
+
+
+
+.formulario p textarea {
+    height: 150px;
+    resize: none;
+    /*asi no se mueve el textarea*/
+
+
+}
+
+.formulario p:nth-child(4) {
+    align-items: flex-start;
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 80px;
+
+
+    cursor: pointer;
+    /*para que salga la manito para seleccionar*/
+
+
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2e64a1;
+}
+
+/*importante*/
+
+/*.formulario input[type="submit"] es el boton*/
+
+
+/*FIN CONTACTO*/
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:550px) {
+
+    header .holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 {
+        position: static;
+        font-size: 28px;
+
+    }
+
+    header .holder img {
+        max-width: 80px;
+
+    }
+
+
+    nav {
+        background-color: #6da9ed;
+        overflow-x: scroll;
+        /*provisorio*/
+
+    }
+
+    .columnas {
+        flex-direction: column;
+
+    }
+
+    .bienvenidos,
+    .testimonios {
+        width: 100%;
+    }
+
+    .holder {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /*NOSOTROS*/
+    .personas {
+        flex-wrap: wrap;
+        gap: 16px;
+
+    }
+
+    .persona {
+        width: 47%;
+    }
+
+
+    .persona p {
+        text-align: left;
+    }
+
+    /*FIN NOSOTROS*/
+
+    /*SERVICIOS*/
+    .servicio,
+    .servicio:nth-child(even) {
+        flex-direction: column;
+    }
+
+    /*si los quiero uno arriba del otro, poner nth-child:*/
+
+
+    .servicio img {
+        width: 100px;
+        max-width: 100px;
+    }
+
+    /*preguntar el viernes*/
+    .servicio {
+        gap: 0;
+    }
+
+    /*FIN SERVICIOS*/
+
+
+    /*INICIO GALERIA */
+
+
+    .galeria {
+        gap: 21px;
+    }
+
+    .galeria img {
+        width: 47%;
+        margin: 0;
+
+    }
+
+    /*FIN GALERIA*/
+
+    /*INICIO CONTACTO*/
+
+    .contacto {
+        flex-direction: column;
+    }
+
+
+
+    /*Fin CONTACTO*/
+
+    /*nav*/
+
+    nav ul .holder {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+       max-height: 0;
+       transition: all 5s ease-in-out ;
+    }
+
+    nav.abierto ul .holder { /*abierto aparece en js*/
+        max-width: 50vh;
+
+    }
+
+    #menuToggle {
+        background-color: #2e64a1;
+        color: white;
+        text-decoration: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 0 15px 8px;
+        /*display: inline-block;*/
+        position: relative;
+        top: -19px;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    
+    }
+
+    
+    
+    
+    
+    
+    /*FIN RESPONSIVE*/
