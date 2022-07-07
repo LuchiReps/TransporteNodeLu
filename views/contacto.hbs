@@ -1,28 +1,28 @@
 <div>
 <h2>Contacto Rapido</h2>
 
-<form action="" method="" class="formulario">
+<form action="/contacto" method="post" class="formulario">
 <p> 
     <label for="">Nombre</label>
-    <input type="text">
+    <input type="text" name="nombre">
 
 </p>
 
 <p>
 <label for="">Email</label>
-<input type="email">
+<input type="email" name="email">
 
 </p>
 
 <p>
   <label for=""> Telefono </label>  
- <input type="number">
+ <input type="number" name="telefono">
 </p>
 
 <p>
 
     <label for="">Mensaje</label>
-    <textarea name="" id="" ></textarea>
+    <textarea name="comentario" id="" ></textarea>
  </p>
 
 
@@ -34,10 +34,13 @@
 
 </form>
 
+
+<p>{{message}}</p>  
+
 <div class="datos">
 <h2>Otras Opciones</h2>
 
-<p>Tambien piede contactarnos por:</p>
+<p>Tambien puede contactarnos por:</p>
 
 <ul>
 <li>  Telefono: 12345667  </li>

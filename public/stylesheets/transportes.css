@@ -529,34 +529,8 @@ div.datos {
 
     /*Fin CONTACTO*/
 
-    /*nav*/
-
-    nav ul .holder {
-        flex-direction: column;
-        padding-left: 0;
-        padding-right: 0;
-       max-height: 0;
-       transition: all 5s ease-in-out ;
-    }
-
-    nav.abierto ul .holder { /*abierto aparece en js*/
-        max-width: 50vh;
-
-    }
-
-    #menuToggle {
-        background-color: #2e64a1;
-        color: white;
-        text-decoration: none;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        padding: 0 15px 8px;
-        /*display: inline-block;*/
-        position: relative;
-        top: -19px;
-        left: 40%;
-        transform: translateX(-50%);
-    }
+    
+   
     
     }
 
